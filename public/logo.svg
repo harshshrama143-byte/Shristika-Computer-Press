@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gold Outer Gradient -->
+    <linearGradient id="goldRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEBA6" />
+      <stop offset="20%" stop-color="#D4AF37" />
+      <stop offset="45%" stop-color="#8F6E1A" />
+      <stop offset="65%" stop-color="#FDE897" />
+      <stop offset="85%" stop-color="#C59B28" />
+      <stop offset="100%" stop-color="#7B5B12" />
+    </linearGradient>
+
+    <!-- Inner Gold Line Gradient -->
+    <linearGradient id="goldInnerRing" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8E596" />
+      <stop offset="50%" stop-color="#C69E32" />
+      <stop offset="100%" stop-color="#FDF0AE" />
+    </linearGradient>
+
+    <!-- Dark Olive / Forest Green Radial Background -->
+    <radialGradient id="greenDisk" cx="48%" cy="46%" r="58%">
+      <stop offset="0%" stop-color="#36492F" />
+      <stop offset="55%" stop-color="#24341F" />
+      <stop offset="88%" stop-color="#192515" />
+      <stop offset="100%" stop-color="#121A0F" />
+    </radialGradient>
+
+    <!-- 3D Monogram Outer Gold Bevel -->
+    <linearGradient id="monogramGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="25%" stop-color="#FFF4D0" />
+      <stop offset="60%" stop-color="#E1BF68" />
+      <stop offset="100%" stop-color="#997018" />
+    </linearGradient>
+
+    <!-- Monogram Inner Cream Fill -->
+    <linearGradient id="creamFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFE" />
+      <stop offset="50%" stop-color="#FFF8E7" />
+      <stop offset="100%" stop-color="#F6E4AF" />
+    </linearGradient>
+
+    <!-- Subtitle Gold Gradient -->
+    <linearGradient id="subtitleGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C9A23E" />
+      <stop offset="50%" stop-color="#FCEBA6" />
+      <stop offset="100%" stop-color="#C9A23E" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filters -->
+    <filter id="logoShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <filter id="monogramShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#070D06" flood-opacity="0.75" />
+    </filter>
+
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="3" stdDeviation="2" flood-color="#060C05" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- Base Circle Background -->
+  <circle cx="250" cy="250" r="240" fill="url(#greenDisk)" />
+
+  <!-- Outer Thick Gold Ring -->
+  <circle cx="250" cy="250" r="236" fill="none" stroke="url(#goldRingGrad)" stroke-width="8" />
+  
+  <!-- Subtle Inset Shadow Ring -->
+  <circle cx="250" cy="250" r="231" fill="none" stroke="#0e170c" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Inner Thin Concentric Gold Ring -->
+  <circle cx="250" cy="250" r="222" fill="none" stroke="url(#goldInnerRing)" stroke-width="2.5" />
+
+  <!-- Script Cursive "S" Monogram + Hyphen "-" -->
+  <g filter="url(#monogramShadow)">
+    
+    <!-- 1. BASE DARK GOLD 3D OUTLINE of the cursive S -->
+    <!-- The S flows: Top loop starts around (210, 155) -> curves up to (245, 82) -> loops peak at (285, 68) -> curves around (302, 85) -> comes down diagonally (245, 160) -> sweeps to bottom-left (176, 245) -> loops around bottom (195, 290) -> curves across (255, 275) -> rises up-right to (308, 192) -->
+    <path
+      d="M 205 162 
+         C 220 120, 242 75, 278 68 
+         C 298 64, 312 78, 305 98 
+         C 292 135, 238 190, 195 240 
+         C 172 268, 175 292, 202 295 
+         C 240 298, 280 252, 312 188"
+      fill="none"
+      stroke="#7A5610"
+      stroke-width="22"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Main Gold Body of the cursive S -->
+    <path
+      d="M 205 162 
+         C 220 120, 242 75, 278 68 
+         C 298 64, 312 78, 305 98 
+         C 292 135, 238 190, 195 240 
+         C 172 268, 175 292, 202 295 
+         C 240 298, 280 252, 312 188"
+      fill="none"
+      stroke="url(#monogramGold)"
+      stroke-width="17"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Inner Cream/Ivory Glow of the cursive S -->
+    <path
+      d="M 205 162 
+         C 220 120, 242 75, 278 68 
+         C 298 64, 312 78, 305 98 
+         C 292 135, 238 190, 195 240 
+         C 172 268, 175 292, 202 295 
+         C 240 298, 280 252, 312 188"
+      fill="none"
+      stroke="url(#creamFill)"
+      stroke-width="11"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Center White 3D Light Sheen -->
+    <path
+      d="M 210 155 
+         C 224 118, 245 78, 278 72 
+         C 294 68, 305 80, 299 96 
+         C 287 132, 236 186, 196 237 
+         C 176 262, 178 286, 202 290 
+         C 236 293, 275 250, 308 190"
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-width="4.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      opacity="0.85"
+    />
+
+    <!-- 2. Stylized Flourish Dash "-" to the right -->
+    <!-- Dark Outline -->
+    <path
+      d="M 324 178 C 342 173, 362 168, 372 165"
+      fill="none"
+      stroke="#7A5610"
+      stroke-width="18"
+      stroke-linecap="round"
+    />
+    <!-- Gold Body -->
+    <path
+      d="M 324 178 C 342 173, 362 168, 372 165"
+      fill="none"
+      stroke="url(#monogramGold)"
+      stroke-width="14"
+      stroke-linecap="round"
+    />
+    <!-- Cream Fill -->
+    <path
+      d="M 324 178 C 342 173, 362 168, 372 165"
+      fill="none"
+      stroke="url(#creamFill)"
+      stroke-width="8"
+      stroke-linecap="round"
+    />
+    <!-- White Highlight -->
+    <path
+      d="M 326 177 C 343 172, 360 168, 370 166"
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-width="3"
+      stroke-linecap="round"
+      opacity="0.85"
+    />
+  </g>
+
+  <!-- BRAND NAME: SHRISTIKA -->
+  <g filter="url(#textShadow)">
+    <text
+      x="250"
+      y="352"
+      font-family="'Cinzel', 'Playfair Display', 'Times New Roman', serif"
+      font-size="46"
+      font-weight="800"
+      letter-spacing="5.5"
+      fill="#FAF8F2"
+      text-anchor="middle"
+    >
+      SHRISTIKA
+    </text>
+  </g>
+
+  <!-- SUBTITLE: — COMPUTER PRESS — -->
+  <g filter="url(#textShadow)">
+    <!-- Left Thin Gold Horizontal Line -->
+    <line x1="78" y1="384" x2="124" y2="384" stroke="url(#subtitleGold)" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Center Subtitle Text -->
+    <text
+      x="250"
+      y="391"
+      font-family="'Montserrat', 'Plus Jakarta Sans', sans-serif"
+      font-size="18"
+      font-weight="700"
+      letter-spacing="6.5"
+      fill="url(#subtitleGold)"
+      text-anchor="middle"
+    >
+      COMPUTER PRESS
+    </text>
+
+    <!-- Right Thin Gold Horizontal Line -->
+    <line x1="376" y1="384" x2="422" y2="384" stroke="url(#subtitleGold)" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+</svg>

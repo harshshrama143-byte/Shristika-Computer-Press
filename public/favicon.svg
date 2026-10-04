@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="favGoldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEBA6" />
+      <stop offset="35%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#8F6E1A" />
+      <stop offset="100%" stop-color="#F7E28E" />
+    </linearGradient>
+    <radialGradient id="favGreenDisk" cx="48%" cy="46%" r="58%">
+      <stop offset="0%" stop-color="#36492F" />
+      <stop offset="70%" stop-color="#24341F" />
+      <stop offset="100%" stop-color="#121A0F" />
+    </radialGradient>
+    <linearGradient id="favMonogram" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#FFF5D6" />
+      <stop offset="100%" stop-color="#DFB854" />
+    </linearGradient>
+  </defs>
+
+  <!-- Green Circle -->
+  <circle cx="64" cy="64" r="62" fill="url(#favGreenDisk)" />
+  
+  <!-- Outer Gold Rim -->
+  <circle cx="64" cy="64" r="60" fill="none" stroke="url(#favGoldRing)" stroke-width="2.5" />
+  <circle cx="64" cy="64" r="56" fill="none" stroke="url(#favGoldRing)" stroke-width="0.8" opacity="0.85" />
+
+  <!-- Script Cursive S -->
+  <g>
+    <!-- Base stroke -->
+    <path
+      d="M 52 41 
+         C 56 31, 62 20, 71 18 
+         C 76 17, 80 20, 78 26 
+         C 75 35, 61 49, 50 62 
+         C 44 69, 45 75, 51 76 
+         C 61 77, 72 65, 80 49"
+      fill="none"
+      stroke="#6B4A0B"
+      stroke-width="7"
+      stroke-linecap="round"
+    />
+    <path
+      d="M 52 41 
+         C 56 31, 62 20, 71 18 
+         C 76 17, 80 20, 78 26 
+         C 75 35, 61 49, 50 62 
+         C 44 69, 45 75, 51 76 
+         C 61 77, 72 65, 80 49"
+      fill="none"
+      stroke="url(#favMonogram)"
+      stroke-width="5"
+      stroke-linecap="round"
+    />
+    <path
+      d="M 53 40 
+         C 57 30, 63 21, 71 19 
+         C 75 18, 78 21, 77 25 
+         C 74 34, 61 48, 50 61 
+         C 45 68, 46 73, 51 75 
+         C 60 76, 71 64, 79 50"
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      opacity="0.9"
+    />
+
+    <!-- Dash flourish -->
+    <path
+      d="M 83 46 C 88 45, 93 43, 96 43"
+      fill="none"
+      stroke="url(#favMonogram)"
+      stroke-width="3.5"
+      stroke-linecap="round"
+    />
+  </g>
+
+  <!-- Typography -->
+  <text 
+    x="64" 
+    y="93" 
+    font-family="'Cinzel', 'Playfair Display', Georgia, serif" 
+    font-size="13" 
+    font-weight="800" 
+    letter-spacing="1.5" 
+    fill="#FCFBF7" 
+    text-anchor="middle"
+  >
+    SHRISTIKA
+  </text>
+  
+  <line x1="16" y1="102" x2="30" y2="102" stroke="url(#favGoldRing)" stroke-width="0.8" />
+  <text 
+    x="64" 
+    y="105" 
+    font-family="'Montserrat', sans-serif" 
+    font-size="5.2" 
+    font-weight="700" 
+    letter-spacing="2" 
+    fill="url(#favGoldRing)" 
+    text-anchor="middle"
+  >
+    PRESS
+  </text>
+  <line x1="98" y1="102" x2="112" y2="102" stroke="url(#favGoldRing)" stroke-width="0.8" />
+</svg>
